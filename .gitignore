@@ -1,0 +1,8 @@
+*
+!*.yaml
+!groups
+!scenes
+!sensors
+!.gitignore
+secrets.yaml
+zwave_device_config.yaml

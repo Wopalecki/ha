@@ -1,0 +1,9 @@
+- platform: airvisual
+  api_key: !secret airvisual_api_key
+  monitored_conditions:
+  - us
+  - cn
+  city: !secret airvisual_city
+  state: !secret airvisual_state
+  country: !secret airvisual_country
+  show_on_map: false

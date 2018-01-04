@@ -1,0 +1,18 @@
+System:
+  - sensor.cpu_used
+  - sensor.average_load_1m
+  - sensor.average_load_5m
+  - sensor.average_load_15m
+  - sensor.ram_used
+  - sensor.memory_use
+  - sensor.ram_available
+  - sensor.disk_used_
+  - sensor.disk_free_
+  - sensor.last_boot
+  - sensor.since_last_boot
+
+Z-Wave:
+  - zwave.zwaveme_razberry_controller_2016_zwave
+  - zwave.fibaro_system_fgwpef_wall_plug_gen5
+  - zwave.philio_technology_corporation_phpat02beu_multisensor_2in1
+  - zwave.philio_technology_corporation_phpat02beu_multisensor_2in1_2

@@ -1,0 +1,52 @@
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.weather_summary
+    - group.switches
+
+bathrooms:
+  name: Bathrooms
+  view: yes
+  icon: mdi:duck
+  entities:
+    - group.parent_bathroom
+    - group.children_bathroom
+
+attic:
+  name: Attic
+  view: yes
+  icon: mdi:fan
+  entities:
+    - group.mechanical_ventilation
+
+sensors:
+  name: Sensors
+  view: yes
+  icon: mdi:gauge
+  entities:
+    - group.zwave 
+
+weatherdash:
+  name: Weather
+  view: yes
+  icon: mdi:weather-partlycloudy
+  entities:
+    - group.weather_summary
+    - group.weather_forecast
+    - group.weather_yr
+    - group.weather_yahoo
+
+airquality:
+  name: Air Quality
+  view: yes
+  icon: mdi:weather-windy
+  entities:
+    - group.air_visual
+
+raspberry:
+  name: Raspberry
+  view: yes
+  icon: mdi:raspberrypi
+  entities:
+    - group.system

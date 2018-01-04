@@ -1,0 +1,17 @@
+Mechanical Ventilation:
+  - zwave.fibaro_system_fgwpef_wall_plug_gen5
+  - switch.fibaro_system_fgwpef_wall_plug_gen5_switch
+  - sensor.fibaro_system_fgwpef_wall_plug_gen5_energy
+  - sensor.fibaro_system_fgwpef_wall_plug_gen5_power
+  - sensor.fibaro_system_fgwpef_wall_plug_gen5_power_2
+
+Parent Bathroom:
+  - binary_sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_sensor
+  - sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_temperature
+  - sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity
+
+Children Bathroom:
+  - binary_sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_sensor_2
+  - sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_temperature_2
+  - sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity_2
+
