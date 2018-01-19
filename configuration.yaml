@@ -12,6 +12,7 @@ homeassistant:
   time_zone: !secret timezone
   # Customization file
   customize: !include customize.yaml
+  customize_glob: !include customize_glob.yaml
 
 # Show links to resources in log and frontend
 #introduction:
@@ -21,6 +22,8 @@ frontend:
 
 # Enables configuration UI
 config:
+
+hassio:
 
 http:
   # Secrets are defined in the file secrets.yaml
@@ -62,6 +65,8 @@ sun:
 zwave:
   usb_path: /dev/ttyAMA0
   new_entity_ids: true
+
+weather: !include weather.yaml
 
 sensor: !include_dir_merge_list sensors
 group: !include_dir_merge_named groups

@@ -9,19 +9,19 @@
 
 
 #### PHILIO PAT02-B ####
-  sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_temperature:
-    friendly_name: Temperature
+#  "sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_temperature*":
+#    friendly_name: Temperature
 
-  sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity:
-    friendly_name: Humidity
-    icon: mdi:water-percent
+#  "sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity*":
+#    friendly_name: Humidity
+#    icon: mdi:water-percent
 
-  sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_temperature_2:
-    friendly_name: Temperature
+#  sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_temperature_2:
+#    friendly_name: Temperature
 
-  sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity_2:
-    friendly_name: Humidity
-    icon: mdi:water-percent
+#  sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity_2:
+#    friendly_name: Humidity
+#    icon: mdi:water-percent
 
 
 #### Sensors ####
