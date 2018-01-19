@@ -1,6 +1,7 @@
 *
 !*.yaml
 !groups
+!manuals
 !scenes
 !sensors
 !.gitignore
