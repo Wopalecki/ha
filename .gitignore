@@ -2,6 +2,7 @@
 !*.yaml
 !groups
 !manuals
+!manuals/*.pdf
 !scenes
 !sensors
 !.gitignore
