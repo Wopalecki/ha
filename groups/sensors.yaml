@@ -1,7 +1,5 @@
 System:
   - sensor.cpu_used
-  - sensor.average_load_1m
-  - sensor.average_load_5m
   - sensor.average_load_15m
   - sensor.ram_used
   - sensor.memory_use

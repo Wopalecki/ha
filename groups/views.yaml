@@ -20,29 +20,30 @@ attic:
   entities:
     - group.mechanical_ventilation
 
-sensors:
-  name: Sensors
-  view: yes
-  icon: mdi:gauge
-  entities:
-    - group.zwave 
-
 weatherdash:
   name: Weather
   view: yes
   icon: mdi:weather-partlycloudy
   entities:
     - group.weather_summary
+    - group.air_visual
     - group.weather_forecast
     - group.weather_yr
     - group.weather_yahoo
 
-airquality:
-  name: Air Quality
+automations:
+  name: Automations
   view: yes
-  icon: mdi:weather-windy
+  icon: mdi:robot
   entities:
-    - group.air_visual
+    - group.automation_ventilation
+
+sensors:
+  name: Sensors
+  view: yes
+  icon: mdi:gauge
+  entities:
+    - group.zwave
 
 raspberry:
   name: Raspberry

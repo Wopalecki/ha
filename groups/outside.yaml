@@ -1,0 +1,30 @@
+#### WEATHER ####
+
+Weather Summary:
+  - sun.sun
+  - sensor.yw_0_current
+  - sensor.yw_0_temperature
+  - sensor.yw_0_humidity
+  - sensor.yw_0_pressure
+
+Weather Yahoo:
+  - sensor.yw_0_condition
+  - sensor.yw_0_current
+  - sensor.yw_0_temperature
+  - sensor.yw_0_temperature_min
+  - sensor.yw_0_temperature_max
+  - sensor.yw_0_humidity
+  - sensor.yw_0_pressure
+  - sensor.yw_0_visibility
+  - sensor.yw_0_wind_speed
+
+
+#### Air Quality ####
+Air Visual:
+  - sensor.us_air_pollution_level
+  - sensor.us_air_quality_index
+  - sensor.us_main_pollutant
+  - sensor.chinese_air_pollution_level
+  - sensor.chinese_air_quality_index
+  - sensor.chinese_main_pollutant
+
