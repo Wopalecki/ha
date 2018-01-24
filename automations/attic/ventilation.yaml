@@ -12,6 +12,15 @@
     platform: numeric_state
     entity_id: sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity, sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity_2
     below: 60
+  condition:
+    condition: and
+    conditions:
+    - condition: numeric_state
+      entity_id: sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity 
+      below: 60
+    - condition: numeric_state
+      entity_id: sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity_2
+      below: 60
   action:
     - service: switch.turn_off
       entity_id: switch.fibaro_system_fgwpef_wall_plug_gen5_switch
