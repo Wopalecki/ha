@@ -2,8 +2,10 @@ System:
   - sensor.cpu_used
   - sensor.average_load_15m
   - sensor.ram_used
+  - sensor.ram_used_2
   - sensor.memory_use
   - sensor.ram_available
+  - sensor.disk_used__2
   - sensor.disk_used_
   - sensor.disk_free_
   - sensor.last_boot
