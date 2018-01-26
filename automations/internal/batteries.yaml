@@ -1,4 +1,4 @@
-- alias: Warb when batteries are below threshold
+- alias: Warn when batteries are below threshold
   trigger:
     - platform: numeric_state
       entity_id:
