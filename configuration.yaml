@@ -42,6 +42,15 @@ updater:
 
 # Enables support for tracking state changes over time
 history:
+  include:
+    domains:
+      - automation
+      - switch
+    entities:
+      - sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_temperature
+      - sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity
+      - sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_temperature_2
+      - sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity_2
 
 # View all events in a logbook
 logbook:
