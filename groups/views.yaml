@@ -2,6 +2,9 @@ default_view:
   view: yes
   icon: mdi:home
   entities:
+    - sun.sun
+    - device_tracker.94652dc3b633
+    - device_tracker.64bc0c7d2b9e
     - weather.openweathermap 
     - group.switches
 
@@ -11,14 +14,18 @@ bathrooms:
   icon: mdi:duck
   entities:
     - group.parent_bathroom
+    - group.parent_showerroom
     - group.children_bathroom
+    - group.children_showerroom
+    - group.washroom
 
-attic:
-  name: Attic
+switch:
+  name: Switches
   view: yes
-  icon: mdi:fan
+  icon: mdi:power-socket-eu
   entities:
     - group.mechanical_ventilation
+    - group.kitchen
 
 weatherdash:
   name: Weather
@@ -27,9 +34,6 @@ weatherdash:
   entities:
     - group.weather_summary
     - group.air_visual
-    - group.weather_forecast
-    - group.weather_yr
-    - group.weather_yahoo
 
 automations:
   name: Automations
@@ -37,6 +41,7 @@ automations:
   icon: mdi:robot
   entities:
     - group.automation_ventilation
+    - group.automation_battery_alert
 
 sensors:
   name: Sensors
@@ -50,4 +55,5 @@ raspberry:
   view: yes
   icon: mdi:raspberrypi
   entities:
+    - group.ha
     - group.system

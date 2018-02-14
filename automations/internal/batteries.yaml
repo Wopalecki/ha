@@ -1,14 +1,14 @@
-- alias: Warn when batteries are below threshold
+- alias: 'Battery Alert'
   trigger:
-    - platform: numeric_state
-      entity_id:
-        - zwave.philio_technology_corporation_phpat02beu_multisensor_2in1
-        - zwave.philio_technology_corporation_phpat02beu_multisensor_2in1_2
-      value_template: '{{ state.attributes.battery_level if state.attributes.battery_level else 101 }}'
-      below: 10
+    - platform: time
+      at: '12:00:00'
+  condition:
+    condition: template
+    value_template: "{% if states('sensor.low_battery') %}{{ true }}{% else %}{{ false }}{% endif %}"
   action:
     service: persistent_notification.create
     data_template:
-      title: 'Battery Low'
-      message: 'Replace batteries in sensor {{ trigger.to_state.name|default("unknown") }}'
+      title: 'Low Battery levels'
+      message: "{{ states('sensor.low_battery') }}"
+      notification_id: low-battery-alert
 

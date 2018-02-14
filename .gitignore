@@ -6,6 +6,7 @@
 *.sqlite
 *.txt
 *.xml
+known_devices.yaml
 secrets.yaml
 zwave_device_config.yaml
 

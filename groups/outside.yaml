@@ -2,21 +2,13 @@
 
 Weather Summary:
   - sun.sun
-  - sensor.yw_0_current
-  - sensor.yw_0_temperature
-  - sensor.yw_0_humidity
-  - sensor.yw_0_pressure
-
-Weather Yahoo:
-  - sensor.yw_0_condition
-  - sensor.yw_0_current
-  - sensor.yw_0_temperature
-  - sensor.yw_0_temperature_min
-  - sensor.yw_0_temperature_max
-  - sensor.yw_0_humidity
-  - sensor.yw_0_pressure
-  - sensor.yw_0_visibility
-  - sensor.yw_0_wind_speed
+  - sensor.yweather_current
+  - sensor.yweather_condition
+  - sensor.yweather_temperature
+  - sensor.yweather_humidity
+  - sensor.yweather_pressure
+  - sensor.yweather_visibility
+  - sensor.yweather_wind_speed
 
 
 #### Air Quality ####

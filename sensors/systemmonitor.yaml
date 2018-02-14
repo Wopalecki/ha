@@ -13,3 +13,46 @@
   - type: load_15m
   - type: last_boot
   - type: since_last_boot
+
+- platform: command_line
+  name: CPU Temperature
+  command: "cat /sys/class/thermal/thermal_zone0/temp"
+  unit_of_measurement: "°C"
+  value_template: '{{ value | multiply(0.001) }}'
+  scan_interval: 300
+
+#- platform: command_line
+#  name: Bad Login
+#  command: "grep -c 'Login attempt' /config/home-assistant.log"
+#  scan_interval: 600
+
+- platform: template
+  sensors:
+    zwave_failures:
+      friendly_name: "Z-Wave Failures"
+      value_template: >
+        {% macro is_failed() %}
+        {%- set value = true -%}
+        {%- set domains = ['zwave'] -%}
+        {%- for domain in domains -%}
+        {%- for item in states[domain] if ((item.attributes.is_failed is defined and item.attributes['is_failed'] == value))-%}
+        {% if (item.attributes.is_failed is defined and item.attributes['is_failed'] == value) -%}
+        {{ item.name }}{% endif -%}
+        {%- endfor -%}
+        {%- endfor -%}
+        {% endmacro %}
+        {{ is_failed() |trim != "" }}
+
+- platform: template
+  sensors:
+    low_battery:
+      friendly_name: "Low Battery"
+      value_template: >
+        {%- set threshold = 15 -%}
+        {%- set domains = ['zwave'] -%}
+        {%- for domain in domains -%}
+        {%- for item in states[domain] if (item.attributes.battery_level is defined and item.attributes['battery_level'] | int < threshold) -%}
+            {{ item.name }} ({{ item.attributes['battery_level'] }}){%- if not loop.last %}, {% endif -%}
+        {%- endfor -%}
+        {%- endfor -%}
+

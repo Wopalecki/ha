@@ -1,11 +1,10 @@
-#### SWITCHES ####
-
-Switches:
-  - switch.fibaro_system_fgwpef_wall_plug_gen5_switch
-
 
 #### Automations ####
 
 Automation Ventilation:
   - automation.mechanical_ventilation_on
   - automation.mechanical_ventilation_off
+
+Automation Battery Alert:
+  - automation.battery_alert
+

@@ -1,3 +1,13 @@
+#### FIBARO FGWPE-102 ZW5 ####
+  "sensor.fibaro_system_fgwpef_wall_plug_gen5_energy*":
+    friendly_name: Electric Energy
+    icon: mdi:sigma
+
+  "sensor.fibaro_system_fgwpef_wall_plug_gen5_power*":
+    friendly_name: Electric Active Power
+    icon: mdi:flash
+
+
 #### PHILIO PAT02-B ####
   "sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_temperature*":
     friendly_name: Temperature
