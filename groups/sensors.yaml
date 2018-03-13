@@ -17,6 +17,7 @@ System:
 Z-Wave:
   - sensor.zwave_failures
   - zwave.zwaveme_razberry_controller_2016_zwave
+  - zwave.aeotec_zw100_multisensor_6
   - zwave.fibaro_system_fgwpef_wall_plug_gen5
   - zwave.fibaro_system_fgwpef_wall_plug_gen5_2
   - zwave.philio_technology_corporation_phpat02beu_multisensor_2in1

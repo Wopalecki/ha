@@ -18,9 +18,9 @@ http:
   api_password: !secret http_password
   ip_ban_enabled: True
   login_attempts_threshold: 5
-  base_url: home.garincha.com:8123
-#  ssl_certificate: /ssl/fullchain.pem
-#  ssl_key: /ssl/privkey.pem
+  base_url: !secret base_url
+  ssl_certificate: !secret ssl_certificate
+  ssl_key: !secret ssl_key
 
 history:
   include:
@@ -38,12 +38,7 @@ history:
       - sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_temperature_5
       - sensor.philio_technology_corporation_phpat02beu_multisensor_2in1_relative_humidity_5
 
-#logger:
-#  default: debug
-#logger:
-#  default: critical
-#  logs:
-#    homeassistant.components.http: warning
+logger: !include logger.yaml
 
 # Enables the frontend
 frontend:

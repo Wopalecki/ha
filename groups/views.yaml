@@ -5,6 +5,7 @@ default_view:
     - sun.sun
     - device_tracker.94652dc3b633
     - device_tracker.64bc0c7d2b9e
+    - binary_sensor.aeotec_zw100_multisensor_6_sensor
     - weather.openweathermap 
     - group.switches
 
@@ -17,6 +18,7 @@ bathrooms:
     - group.parent_showerroom
     - group.children_bathroom
     - group.children_showerroom
+    - group.kitchen
     - group.washroom
 
 switch:
@@ -25,7 +27,7 @@ switch:
   icon: mdi:power-socket-eu
   entities:
     - group.mechanical_ventilation
-    - group.kitchen
+    - group.fridge
 
 weatherdash:
   name: Weather

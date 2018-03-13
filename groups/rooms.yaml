@@ -1,8 +1,17 @@
-Kitchen:
+Fridge:
   - zwave.fibaro_system_fgwpef_wall_plug_gen5_2
   - switch.fibaro_system_fgwpef_wall_plug_gen5_switch_2
   - sensor.fibaro_system_fgwpef_wall_plug_gen5_energy_2
   - sensor.fibaro_system_fgwpef_wall_plug_gen5_power_2
+
+Kitchen:
+  - zwave.aeotec_zw100_multisensor_6
+  - binary_sensor.aeotec_zw100_multisensor_6_sensor
+  - sensor.aeotec_zw100_multisensor_6_burglar
+  - sensor.aeotec_zw100_multisensor_6_luminance
+  - sensor.aeotec_zw100_multisensor_6_temperature
+  - sensor.aeotec_zw100_multisensor_6_relative_humidity
+  - sensor.aeotec_zw100_multisensor_6_ultraviolet
 
 Mechanical Ventilation:
   - zwave.fibaro_system_fgwpef_wall_plug_gen5
